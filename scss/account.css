@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+header {
+  padding-top: 40px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+nav {
+  padding: 30px 0;
+}
+
+.navbar-shrink {
+  padding: 20px 0;
+}
+
+#dark-light {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: black;
+}
+
+.dark * {
+  color: white !important;
+}
+
+nav {
+  max-width: 1440px;
+  height: 120px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.search {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.searchbar {
+  position: relative;
+}
+.searchbar form input {
+  width: 443px;
+  height: 48px;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--text-in-field, #ccc);
+}
+.searchbar form input:active {
+  border: 1px solid var(--text-in-field, #ccc);
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.nav-items ul li ul {
+  position: absolute;
+  max-width: 180px;
+  background: #fff;
+  display: none;
+}
+.nav-items ul li ul li {
+  max-width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.fff {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--text-tittle, #1c3554);
+  /* Paragraph/Bold/Body - 16px */
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 200% */
+}
+
+.nav-items ul li:hover > ul {
+  display: initial;
+}
+
+.btn1 {
+  display: inline-flex;
+  padding: 8px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--text-tittle, #1c3554);
+  transition: 0.5s;
+}
+.btn1 a {
+  color: var(--text-tittle, #1c3554);
+  /* Paragraph/Semibold/Body - 16px */
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+
+.btn1:hover {
+  border-radius: 8px;
+  background: var(--primary-pink, #f72585);
+  border: #f72585;
+}
+.btn1:hover a:hover {
+  color: #fff;
+}
+
+.fff:hover {
+  color: #000;
+}
+
+.hero {
+  width: 1440px;
+  height: 440px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  background: var(--other-overlay-50, #000);
+}
+
+.card1 h4 {
+  color: var(--text-tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Heading/Bold/H4 - 32px */
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 150% */
+  text-transform: capitalize;
+}
+
+.card1 h6 {
+  color: var(--text-body, #808080);
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Heading/Medium/H6 - 16px */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+}
+
+.cards1 {
+  display: flex;
+}
+
+.card1 {
+  display: flex;
+}
+
+.my {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 295px;
+  height: 427px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--other-white, #ccc);
+}
+
+.cr {
+  width: 262.891px;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--text-in-field, #aaa);
+  margin: auto;
+  position: relative;
+}
+
+.card h5 {
+  color: var(--text-tittle, #1c3554);
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Heading/Medium/H6 - 16px */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+}
+
+.card h6 {
+  color: var(--primary-pink, #f72585);
+  /* Paragraph/Semibold/Label - 12px */
+  font-family: Montserrat SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  margin: auto;
+}
+
+.card p {
+  background: #ccc;
+  text-decoration: line-through;
+  margin: auto;
+}
+
+.card button {
+  display: inline-flex;
+  padding: 4px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--other-blue, #4586d6);
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+}
+
+.lol {
+  display: flex;
+}
+
+.footer {
+  max-width: 1360px;
+  height: 435px;
+  border-radius: 8px;
+  background: var(--other-navy, #021934);
+}
+
+.part3 {
+  padding-top: 80px;
+  padding-left: 68px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.p14 p {
+  color: var(--text-white, #fff);
+  width: 500px;
+  /* Paragraph/Reguler/Body - 16px */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+}
+
+.part4 {
+  display: flex;
+  gap: 135px;
+  padding-top: 80px;
+  padding-left: 120px;
+}
+
+.p15 a {
+  color: var(--text-white, #fff);
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Heading/Reguler/H5 - 24px */
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+}
+
+.p16 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 24px;
+}
+.p16 a {
+  color: var(--text-white, #fff);
+  /* Paragraph/Semibold/Body - 16px */
+  font-family: Montserrat SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+
+.p17 {
+  padding-top: 100px;
+  padding-left: 68px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.p17 p {
+  color: var(--text-white, #fff);
+  text-align: center;
+  /* Paragraph/Reguler/Body - 16px */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+}
+
+.p18 {
+  padding-top: 100px;
+  color: var(--text-white, #fff);
+  text-align: right;
+  /* Paragraph/Reguler/Body - 16px */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+}
+
+.flex {
+  display: flex;
+  gap: 472px;
+}/*# sourceMappingURL=account.css.map */
