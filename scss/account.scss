@@ -201,16 +201,19 @@ nav {
   height: 427px;
   flex-shrink: 0;
   border-radius: 8px;
-  background: var(--other-white, #ccc);
+  position: relative;
+  border-radius: 8px;
+  background: var(--other-white, #fff);
+}
+.card:hover {
+  filter: drop-shadow(40px 40px 57px rgba(0, 0, 0, 0.1));
 }
 .cr {
   width: 262.891px;
   height: 208px;
   flex-shrink: 0;
   border-radius: 4px;
-  background: var(--text-in-field, #aaa);
-  margin: auto;
-  position: relative;
+  background: var(--text-in-field, #ccc);
 }
 .card h5 {
   color: var(--text-tittle, #1c3554);
@@ -236,9 +239,14 @@ nav {
   margin: auto;
 }
 .card p {
-  background: #ccc;
-  text-decoration: line-through;
-  margin: auto;
+  color: var(--text-in-field, #ccc);
+
+  /* Paragraph/Reguler/Body - 16px */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
 }
 .card button {
   display: inline-flex;
@@ -250,6 +258,8 @@ nav {
   cursor: pointer;
   border: 0;
   position: absolute;
+  top: 190px;
+  color: #fff;
 }
 .lol {
   display: flex;
