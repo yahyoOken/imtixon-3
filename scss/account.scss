@@ -358,3 +358,23 @@ nav {
   display: flex;
   gap: 472px;
 }
+@media (max-width: 1440px) {
+  // lg
+}
+
+@media (max-width: 976px) {
+  // md
+}
+
+@media (max-width: 768px) {
+  // sm
+  .hero {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    width: 200px;
+  }
+}

@@ -26,6 +26,7 @@ nav {
 
 .navbar-shrink {
   padding: 20px 0;
+  transition: 0.6s;
 }
 
 #dark-light {
@@ -175,6 +176,7 @@ body a {
   height: 748px;
   flex-shrink: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hero-item {
@@ -255,6 +257,7 @@ body a {
   background: var(--text-disable, #e6e6e6);
   margin-top: 65px;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .blue {
@@ -520,6 +523,7 @@ body a {
 .topcat {
   display: flex;
   margin-top: 110px;
+  flex-wrap: wrap;
 }
 
 .rasmlar .rasm {
@@ -529,12 +533,13 @@ body a {
   width: 296px;
   height: 350px;
   flex-shrink: 0;
+  flex-wrap: wrap;
 }
 
 .rasmlar {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -574,6 +579,7 @@ body a {
   justify-content: center;
   margin-top: 85px;
   gap: 150px;
+  flex-wrap: wrap;
 }
 
 .ikon svg {
@@ -957,42 +963,76 @@ body a {
 
 @media (max-width: 976px) {
   .hero-start {
-    flex-wrap: wrap;
-    display: flex;
+    width: 900px;
   }
-  .hero {
-    flex-wrap: wrap;
-    display: flex;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-  .hero-item {
-    display: flex;
-    margin-bottom: 200px;
-  }
-  .cards {
+  .become1 {
     flex-wrap: wrap;
   }
   .karts {
     flex-wrap: wrap;
   }
-  .rasmlar {
+  .hero-item {
+    margin-bottom: 40px;
+  }
+  .cards {
+    margin-top: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .qizil-ikon {
+    gap: 10px;
+    justify-content: center;
+  }
+  .become1 {
     flex-wrap: wrap;
-    display: flex;
   }
-  .rasm {
-    flex-wrap: wrap;
-  }
-  .topcat {
-    flex-wrap: wrap;
-  }
-  .hero-item h1 {
-    width: 310px;
-  }
-  .hero-item p {
-    will-change: 100px;
+  .bec {
+    width: 370px;
   }
   .item1 {
+    width: 400px;
+  }
+  .hero-item h1 {
     width: 300px;
+  }
+  .hero-item p {
+    width: 200px;
+  }
+}
+#backtop {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2);
+  color: #333;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: -50px;
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.6s;
+}
+
+@media (max-width: 480px) {
+  .item1 {
+    width: 300px;
+    justify-content: center;
+  }
+  .bec {
+    width: 200px;
+    height: 200px;
+  }
+  .bec2 h1 {
+    width: 100px;
+  }
+  .bec2 p {
+    width: 100px;
   }
 }/*# sourceMappingURL=style.css.map */

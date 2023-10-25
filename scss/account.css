@@ -368,4 +368,15 @@ nav {
 .flex {
   display: flex;
   gap: 472px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    width: 200px;
+  }
 }/*# sourceMappingURL=account.css.map */

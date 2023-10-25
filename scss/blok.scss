@@ -336,12 +336,30 @@ nav {
 
 @media (max-width: 768px) {
   // sm
+  .hero1 h1 {
+    width: 100px;
+  }
+  .soz h1 {
+    width: 400px;
+  }
+  .soz p {
+    width: 350px;
+  }
 }
 
 @media (max-width: 480px) {
   .bl {
     width: 400px;
     height: 400px;
+  }
+  .hero1 h1 {
+    width: 60px;
+  }
+  .soz h4 {
+    width: 250px;
+  }
+  .soz p {
+    width: 100px;
   }
   // xs
 }

@@ -617,11 +617,28 @@ nav {
   gap: 472px;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
+@media (max-width: 976px) {
   .nav-items {
     display: none;
   }
-}/*# sourceMappingURL=ikkibet.css.map */
+}
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+  .allC {
+    flex-wrap: wrap;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+  #navbar-open:hover {
+    transition: 10s;
+  }
+  #navbar-open:hover .nav-items {
+    display: block;
+  }
+}/*# sourceMappingURL=courses.css.map */

@@ -595,15 +595,30 @@ nav {
 
 @media (max-width: 976px) {
   // md
+  .nav-items {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   // sm
-  .navbar {
-    display: none;
-  }
   .nav-items {
     display: none;
+  }
+  .allC {
+    flex-wrap: wrap;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+  #navbar-open:hover {
+    .nav-items {
+      display: block;
+    }
+    transition: 10s;
   }
 }
 
