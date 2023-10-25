@@ -23,6 +23,7 @@ nav {
 
 .navbar-shrink {
   padding: 20px 0;
+  transition: 0.6s;
 }
 #dark-light {
   border: none;
@@ -149,22 +150,15 @@ nav {
 }
 .hero {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.hero1 {
-  display: flex;
-  align-items: first baseline;
-  justify-content: flex-start;
-  flex-direction: column;
-  width: 1440px;
+  max-width: 100%;
   height: 682px;
   flex-shrink: 0;
   opacity: 0.5;
   background: var(--other-overlay-50, #000);
+  align-items: center;
+  justify-content: flex-start;
 }
 .hero1 h1 {
-  width: 712px;
   color: var(--text-white, #fff);
   font-variant-numeric: lining-nums proportional-nums;
 
@@ -174,8 +168,9 @@ nav {
   font-style: normal;
   font-weight: 700;
   line-height: 63.984px; /* 133.3% */
+  width: 712px;
 }
-.hero1 h5 {
+.hero1 h3 {
   color: var(--text-white, #fff);
 
   /* Heading/Medium/H5 - 24px */
@@ -210,41 +205,51 @@ nav {
   padding: 12px 32px;
   align-items: center;
   gap: 10px;
-  border-radius: 8px;
-  color: palevioletred;
+  color: #f72585;
   background-color: #fff;
   cursor: pointer;
+  border-radius: 8px;
 }
 .btn:hover {
-  transition: 0.4s;
+  border-radius: 8px;
   background: var(--primary-pink, #f72585);
-  color: #fff;
   border: 0;
+  transition: 0.4s;
+  color: #fff;
 }
 .btn2 {
   display: inline-flex;
   padding: 12px 32px;
   align-items: center;
   gap: 10px;
-  border-radius: 8px;
-  color: palevioletred;
+  color: #f72585;
   background-color: #fff;
   cursor: pointer;
+  border-radius: 8px;
 }
 .btn2:hover {
-  transition: 0.4s;
+  border-radius: 8px;
   background: var(--primary-pink, #f72585);
-  color: #fff;
   border: 0;
+  transition: 0.4s;
+  color: #fff;
 }
-.what {
+.vs1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 40px;
+  flex-wrap: wrap;
 }
-.what h1 {
+.kard {
+  width: 440px;
+  height: 921px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid var(--text-in-field, #ccc);
+  background: var(--text-white, #fff);
+}
+.what h2 {
   color: var(--text-tittle, #1c3554);
   font-variant-numeric: lining-nums proportional-nums;
 
@@ -265,18 +270,22 @@ nav {
   font-style: normal;
   font-weight: 400;
   line-height: 27px; /* 168.75% */
+  width: 712px;
   margin-bottom: 10px;
 }
-.bitta {
-  width: 440px;
-  height: 921px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  border: 1px solid var(--text-in-field, #ccc);
-  background: var(--text-white, #fff);
-  margin-right: 100px;
+.kard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: center;
 }
-.bt {
+.kard svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kar {
   width: 440px;
   height: 313px;
   flex-shrink: 0;
@@ -284,7 +293,43 @@ nav {
   opacity: 0.5;
   background: var(--other-overlay-50, #000);
 }
-.bitta h4 {
+.btn3 {
+  display: flex;
+  width: 376px;
+  padding: 24px 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  color: #f72585;
+  border-radius: 8px;
+  background: #fff;
+}
+.btn3:hover {
+  border-radius: 8px;
+  background: var(--primary-pink, #f72585);
+  border: 0;
+  color: #fff;
+}
+.btn4 {
+  display: flex;
+  width: 376px;
+  padding: 24px 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  color: #f72585;
+  border-radius: 8px;
+  background: #fff;
+}
+.btn4:hover {
+  border-radius: 8px;
+  background: var(--primary-pink, #f72585);
+  border: 0;
+  color: #fff;
+}
+.kard h3 {
   color: var(--text-tittle, #1c3554);
   font-variant-numeric: lining-nums proportional-nums;
 
@@ -296,7 +341,7 @@ nav {
   line-height: 48px; /* 150% */
   text-transform: capitalize;
 }
-.bitta p {
+.kard p {
   color: var(--text-in-field, #ccc);
   font-variant-numeric: lining-nums proportional-nums;
 
@@ -306,19 +351,8 @@ nav {
   font-style: normal;
   font-weight: 400;
   line-height: 32px; /* 133.333% */
-  text-decoration: line-through;
 }
-.bitta h3 {
-  color: var(--text-tittle, #1c3554);
-
-  /* Heading/Medium/H5 - 24px */
-  font-family: Rubik;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 32px; /* 133.333% */
-}
-.bitta h6 {
+.kard h6 {
   color: var(--text-tittle, #1c3554);
   font-variant-numeric: lining-nums proportional-nums;
 
@@ -330,44 +364,38 @@ nav {
   line-height: 24px; /* 150% */
   text-transform: capitalize;
 }
-.btn1 {
-  cursor: pointer;
-  display: flex;
-  width: 376px;
-  padding: 24px 40px;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  color: #f72585;
-  background-color: #fff;
+.kard h4 {
+  color: var(--text-tittle, #1c3554);
+
+  /* Heading/Medium/H5 - 24px */
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
 }
-.btn2 {
-  cursor: pointer;
-  display: flex;
-  width: 376px;
-  padding: 24px 40px;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  color: #f72585;
-  background-color: #fff;
+.bj p {
+  color: var(--text-tittle, #1c3554);
+
+  /* Paragraph/Semibold/Caption - 14px */
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
 }
-.btn1:hover {
-  border-radius: 8px;
-  background: var(--primary-pink, #f72585);
-  color: #fff;
-  transition: 0.4s;
-  border: 0;
-}
-.elli {
-  border-radius: 8px;
-  background: var(--other-red, #ef233c);
-  width: 109px;
-  height: 56px;
+.objrct {
+  max-width: 728px;
+  height: 480px;
   flex-shrink: 0;
-}
-span {
-  color: #fff;
+  border-radius: 8px;
+  background: var(--primary-20-pink, #fff5f9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .lol {
   display: flex;
@@ -465,4 +493,28 @@ span {
 .flex {
   display: flex;
   gap: 472px;
+}
+@media (max-width: 1440px) {
+  // lg
+}
+
+@media (max-width: 976px) {
+}
+
+@media (max-width: 768px) {
+  .hero1 h1 {
+    width: 200px;
+  }
+  .objrct {
+    flex-wrap: wrap;
+    gap: 50px;
+    flex-direction: column;
+  }
+  .what p {
+    width: 200px;
+  }
+  .bj {
+    flex-wrap: wrap;
+  }
+  // sm
 }
